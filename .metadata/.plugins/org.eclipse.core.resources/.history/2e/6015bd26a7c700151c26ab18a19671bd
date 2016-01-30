@@ -12,7 +12,7 @@ public class EnchantThor extends CustomEnchantment {
 	static final Material[] THOR_Items = new Material[] { Material.IRON_AXE, Material.DIAMOND_AXE };
 	
 	public EnchantThor() {
-		super("Defensive", THOR_Items, 2);
+		super("LOKI", THOR_Items, 2);
 		this.max = 10;
 	}
 	@Override

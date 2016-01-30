@@ -19,7 +19,7 @@ public class EnchantTrap extends CustomEnchantment {
 	
 	@Override
     public void applyEffect(LivingEntity user, LivingEntity target, int enchantLevel, EntityDamageByEntityEvent event) {
-	    target.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, enchantLevel*5, 255));
-	    target.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, enchantLevel*5, 255));
+	    target.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, enchantLevel*20, 255));
+	    target.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, enchantLevel*20, 255));
 	}
 }
