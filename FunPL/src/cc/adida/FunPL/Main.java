@@ -3,9 +3,10 @@ package cc.adida.FunPL;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.java.JavaPlugin;
 
-public class Main extends JavaPlugin {
+import com.rit.sucy.EnchantPlugin;
+
+public class Main extends EnchantPlugin {
 	@Override
 	public void onEnable() {
 		getLogger().info("Hi World");
@@ -13,7 +14,6 @@ public class Main extends JavaPlugin {
 	}
 	@Override
 	public void onDisable() {
-		
 		
 	}
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {

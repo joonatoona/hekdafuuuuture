@@ -1,0 +1,7 @@
+name: FunPL
+main: cc.adida.FunPL.Main
+version: 1.0
+commands:
+   ehlo:
+      description: Blank description.
+      usage: /<command>
