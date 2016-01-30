@@ -1,0 +1,7 @@
+name: FunPL
+main: cc.adida.FunPL.Main
+version: 1.0
+commands:
+   ehlo:
+      description: Hello w0rld! (Adi can't code >:D)
+      usage: /<command>
