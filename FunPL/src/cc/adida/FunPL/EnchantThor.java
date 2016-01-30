@@ -18,6 +18,7 @@ public class EnchantThor extends CustomEnchantment {
 	}
 	@Override
 	public void applyMiscEffect(Player user, int enchant, PlayerInteractEvent event) {
-		user.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 10, enchant));
+		user.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, enchant, 2));
+		user.getItemInHand().setDurability((short) (user.getItemInHand().getDurability()-enchant*5));
 	}
 }

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.bukkit.plugin.java.JavaPlugin"/>
+<fullyQualifiedTypeName name="org.bukkit.command.Command"/>
+<fullyQualifiedTypeName name="org.bukkit.command.CommandSender"/>
 <fullyQualifiedTypeName name="com.rit.sucy.CustomEnchantment"/>
 <fullyQualifiedTypeName name="org.bukkit.Material"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.LivingEntity"/>
+<fullyQualifiedTypeName name="org.bukkit.event.player.PlayerInteractEvent"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.Player"/>
-<fullyQualifiedTypeName name="com.rit.sucy.EnchantmentAPI"/>
-<fullyQualifiedTypeName name="com.rit.sucy.EnchantPlugin"/>
+<fullyQualifiedTypeName name="org.bukkit.potion.PotionEffectType"/>
+<fullyQualifiedTypeName name="org.bukkit.potion.PotionEffect"/>
 </qualifiedTypeNameHistroy>
