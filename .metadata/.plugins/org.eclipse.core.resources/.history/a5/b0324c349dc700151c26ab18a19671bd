@@ -16,6 +16,6 @@ public class EnchantJohnCena extends CustomEnchantment {
 	
 	@Override
     public void applyEffect(LivingEntity user, LivingEntity target, int enchantLevel, EntityDamageByEntityEvent event) {
-		target.setVelocity(target.getVelocity().add(target.getLocation().toVector().subtract(user.getLocation().toVector()).normalize().multiply(enchantLevel)));
+		target.setVelocity(target.getVelocity().add(target.getLocation().toVector().subtract(user.getLocation().toVector()).normalize().multiply(enchantLevel/2)));
     }
 }
