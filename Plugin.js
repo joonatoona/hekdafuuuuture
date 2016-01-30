@@ -1,9 +1,5 @@
 function BOOM(){
-
-echo(player, "BOOM!")
-
-spawn('TNT');
-
+	spawn('TNT');
 }
 
 exports.BOOM = BOOM;
