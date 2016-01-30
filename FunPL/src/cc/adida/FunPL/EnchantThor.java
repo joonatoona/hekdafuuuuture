@@ -1,7 +1,6 @@
 package cc.adida.FunPL;
 
 import org.bukkit.Material;
-import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.potion.PotionEffect;
@@ -18,7 +17,7 @@ public class EnchantThor extends CustomEnchantment {
 	}
 	@Override
 	public void applyMiscEffect(Player user, int enchant, PlayerInteractEvent event) {
-		user.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, enchant, 2));
+		user.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, enchant*20, 2));
 		user.getItemInHand().setDurability((short) (user.getItemInHand().getDurability()-enchant*5));
 	}
 }

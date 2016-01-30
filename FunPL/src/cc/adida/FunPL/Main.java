@@ -16,6 +16,7 @@ public class Main extends EnchantPlugin {
 	@Override
     public void registerEnchantments() {
         EnchantmentAPI.registerCustomEnchantment(new EnchantHeker());
+        EnchantmentAPI.registerCustomEnchantment(new EnchantThor());
     }
 
 }
