@@ -19,6 +19,7 @@ public class Main extends EnchantPlugin {
         EnchantmentAPI.registerCustomEnchantment(new EnchantThor());
         EnchantmentAPI.registerCustomEnchantment(new EnchantJohnCena());
         EnchantmentAPI.registerCustomEnchantment(new EnchantTrap());
+        EnchantmentAPI.registerCustomEnchantment(new EnchantExplodabow());
     }
 
 }

@@ -1,0 +1,16 @@
+package cc.adida.FunPL;
+
+import org.bukkit.Material;
+
+import com.rit.sucy.CustomEnchantment;
+
+public class EnchantExplodabow extends CustomEnchantment {
+	static final Material[] Bow = new Material[] { Material.BOW };
+
+	public EnchantExplodabow() {
+		super("Explodabow", Bow, 2);
+		this.max = 5;
+	}
+	
+	
+}

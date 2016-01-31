@@ -1,0 +1,24 @@
+package cc.adida.FunPL;
+
+import org.bukkit.Material;
+import org.bukkit.entity.LivingEntity;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
+
+import com.rit.sucy.CustomEnchantment;
+
+public class EnchantExplodabow extends CustomEnchantment {
+	static final Material[] Bow = new Material[] { Material.BOW };
+
+	public EnchantExplodabow() {
+		super("Explodabow", Bow, 2);
+		this.max = 5;
+	}
+	
+	@Override
+    public void applyEffect(LivingEntity user, LivingEntity target, int enchantLevel, EntityDamageByEntityEvent event) {
+		if (event.getCause().equals(DamageCause.PROJECTILE)) {
+			target.getWorld().createExplosion(target.getLocation(), (float) enchantLevel);
+		}
+	}
+}
